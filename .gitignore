@@ -3,6 +3,10 @@
 node_modules
 yarn-error.log
 package-lock.json
+.yarn/cache
+.yarn/unplugged
+.yarn/*-state.*
+.pnp.*
 
 # Build directory
 /public
