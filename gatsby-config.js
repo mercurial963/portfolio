@@ -5,7 +5,7 @@ module.exports = {
     title: 'Pao Lersiripong',
     description:
       'I’m Pao Lersiripong, a software engineer specializing in building exceptional digital experiences.',
-    siteUrl: '', // No trailing slash allowed!
+    siteUrl: 'http://localhost', // No trailing slash allowed!
     image: '', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
