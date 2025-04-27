@@ -4,8 +4,8 @@ module.exports = {
   siteMetadata: {
     title: 'Pao Lersiripong',
     description:
-      'I’m Pao Lersiripong, a software engineer specializing in building exceptional digital experiences.',
-    siteUrl: 'http://localhost', // No trailing slash allowed!
+      'I’m Pao Lersiripong, a DevOps engineer specializing in building exceptional, reliable, and scalable digital experiences',
+    siteUrl: 'https://paolersiripong.pages.dev', // No trailing slash allowed!
     image: '', // Path to your image you placed in the 'static' folder
     twitterUsername: '',
   },
