@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import { Menu } from '@components';
+import { IconHex, IconLogo } from '@components/icons';
+import { navLinks } from '@config';
+import { usePrefersReducedMotion, useScrollDirection } from '@hooks';
+import { loaderDelay } from '@utils';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
+import React, { useEffect, useState } from 'react';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled, { css } from 'styled-components';
-import { navLinks } from '@config';
-import { loaderDelay } from '@utils';
-import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
-import { Menu } from '@components';
-import { IconLogo, IconHex } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -66,7 +66,7 @@ const StyledNav = styled.nav`
     ${({ theme }) => theme.mixins.flexCenter};
 
     a {
-      color: var(--green);
+      color: var(--pink);
       width: 42px;
       height: 42px;
       position: relative;
@@ -135,7 +135,7 @@ const StyledLinks = styled.div`
         &:before {
           content: '0' counter(item) '.';
           margin-right: 5px;
-          color: var(--green);
+          color: var(--pink);
           font-size: var(--fz-xxs);
           text-align: right;
         }
@@ -206,7 +206,7 @@ const Nav = ({ isHome }) => {
   );
 
   const ResumeLink = (
-    <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+    <a className="resume-button" href="/resume.html" target="_blank" rel="noopener noreferrer">
       Resume
     </a>
   );

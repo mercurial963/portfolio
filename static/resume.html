@@ -1,0 +1,349 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Resume - Pao Lersiripong</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#dfff3d'
+            }
+          }
+        }
+      }
+    </script>
+  <style>
+    body {
+      background: rgb(204, 204, 204);
+      font-family: "Montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+    }
+    *, *::after, *::before, h1:is(h1) {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      box-sizing: border-box;
+    }
+    @keyframes fadeIn {
+        0% { opacity: 0; transform: translateY(20px); }
+        100% { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in {
+        animation: fadeIn 1s ease-out forwards;
+    }
+    @media print {
+      @page {
+        margin: 0;
+        size: 21cm 29.7cm;
+      }
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+  </head>
+  <body>
+    <div class="bg-white h-[29.7cm] w-[21cm] mx-auto animate-fade-in">
+        <div class='flex '>
+          <div class='basis-2/3 h-[29.7cm] p-10 animate-fade-right'>
+            <h1 class='text-3xl font-semibold my-2  animate-pulse bg-gradient-to-r from-blue-500 via-green-500 to-violet-500 bg-clip-text text-transparent'>
+              Pao Lersiripong
+            </h1>
+            <h3 class='text-1xl font-semibold  text-sky-700 my-4 animate-fade-right'>
+              Devops Engineer
+            </h3>
+            <hr class='outline-none border-none h-1 bg-slate-400' />
+            <div class='my-6'>
+              <div class='my-4'>
+                <h2 class=' text-sky-500 font-semibold underline underline-offset-8 animate-fade-right'>
+                  Summary
+                </h2>
+                <p class='my-2 text-xs ml-2'>
+                  DevOps Engineer with expertise in a variety of technology stacks.
+                  Experience with Amazon Web Services (AWS) in a variety of
+                  solutions. Also, SAP Technical Consultant experience in
+                  implementing and migrating SAP systems and databases at the
+                  production level.
+                </p>
+              </div>
+    
+              <div class='my-4'>
+                <h2 class=' text-sky-500 font-semibold underline underline-offset-8 animate-fade-right'>
+                  Experience
+                </h2>
+                <div class='flex my-2'>
+                  <div class='flex-1'>
+                    <p class='text-sm font-medium'>Senior Devops Engineer</p>
+                    <p class='text-xs'>NEOZO GmbH</p>
+                  </div>
+                  <p class='text-xs mt-1 '>May 2024 - Present</p>
+                </div>
+                <div class='flex my-2'>
+                  <div class='flex-1'>
+                    <p class='text-sm font-medium'>Senior Devops Engineer</p>
+                    <p class='text-xs'>AI and Robotic Ventures</p>
+                  </div>
+                  <p class='text-xs mt-1 '>Jan 2022 - Apr 2024</p>
+                </div>
+                <div class='flex my-2'>
+                  <div class='flex-1'>
+                    <p class='text-sm font-medium'>Devops Engineer</p>
+                    <p class='text-xs'>Opsta (Thailand)</p>
+                  </div>
+                  <p class='text-xs mt-1'>Aug 2021 - Dec 2021</p>
+                </div>
+                <div class='flex my-2'>
+                  <div class='flex-1'>
+                    <p class='text-sm font-medium'>SAP Basis Consultant</p>
+                    <p class='text-xs'>I AM Consulting</p>
+                  </div>
+                  <p class='text-xs mt-1'>June 2018 - Aug 2021</p>
+                </div>
+              </div>
+              <div class='my-4'>
+                <h2 class=' text-sky-500 font-semibold underline underline-offset-8 animate-fade-right'>
+                  Technical Project
+                </h2>
+                <div class='my-2'>
+                  <div>
+                    <h4 class='text-base font-medium mt-2'>
+                      Setup AWS landing zone
+                    </h4>
+                    <ul>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Design landing zone account following business requirement
+                      </li>
+    
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup root account
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup AWS Organization
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup AWS SSO with Azure Active Directory
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup custom pre-defined role for all accounts
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class='text-base font-medium mt-2'>
+                      Implement centralize AWS network cross accounts
+                    </h4>
+                    <ul>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Design AWS centralize VPC accross account
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup AWS Transit gateway in network account
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup AWS Client VPN
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup AWS VPC for all accounts
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Configure routing for internal traffic and VPN traffic
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class='text-base font-medium mt-2'>
+                      Setup shared infrastructure template and automation
+                    </h4>
+                    <ul>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Develop pre-defined terraform module for AWS, GCP,
+                        Kubernetes
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Design & Implement CI/CD with Terragrunt and Gitlab
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class='text-base font-medium mt-2'>
+                      Setup Centralize Monitoring
+                    </h4>
+                    <ul>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Set up metrics monitor using Grafana and Prometheus to get
+                        metrics from Kubernetes cluster
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup logs pipeline and monitoring using Loki and Promptail
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup trace monitor using sentry
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class='text-base font-medium mt-2'>
+                      Configuration Kubernetes
+                    </h4>
+                    <ul>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Implement Kubenernetes best practices configuration
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Setup load testing for each scenario to adjust and optimize
+                        resources
+                      </li>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Upgrade Kubernetes Cluster to latest version
+                      </li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class='text-base font-medium mt-2'>CI/CD Pipeline</h4>
+                    <ul>
+                      <li class='my-1 text-xs ml-2 list-disc list-inside'>
+                        Implement CI/CD using Jenkins with ArgoCD
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class='basis-1/3 px-5 py-10 bg-sky-500 h-[29.7cm] animate-fade-left '>
+            <div class='flex flex-wrap justify-center'>
+              <div class='mx-8'>
+                <img
+                  src="pao.jpeg"
+                  alt='Pao'
+                  class=' rounded-full max-w-full h-auto align-middle border-none bg-sky-500 transition duration-300 ease-in-out hover:scale-110'
+                />
+              </div>
+            </div>
+    
+            <div>
+              <h2 class=' text-white font-semibold underline underline-offset-8 mt-10 animate-fade-left'>
+                Contact
+              </h2>
+              <div class='my-3'>
+                <ul>
+                  <li class='text-sm mb-1'>
+                    <i class='bx bx-envelope bx-flip-horizontal mr-1'></i>
+                    p.lersiripong@gmail.com
+                  </li>
+                  <li class='text-sm mb-1'>
+                    <i class='bx bx-mobile bx-flip-horizontal mr-1'></i>
+                    081-996-5041
+                  </li>
+                  <li class='text-sm mb-1'>
+                    <i class='bx bx-map bx-flip-horizontal mr-1'></i>
+                    Phrakanong, Bangkok, 10260
+                  </li>
+                  <li class='text-sm mb-1'>
+                    <i class='bx bxl-linkedin-square mr-1'></i>
+                    linkedin.com/pamnattharat
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2 class=' text-lg text-white font-semibold underline underline-offset-8 mt-10 animate-fade-left'>
+                Skills
+              </h2>
+              <div class='my-2'>
+                <div class='my-1'>
+                  <h4 class='text-base font-medium'>CI/CD Tools</h4>
+    
+                  <p class='text-sm mx-1'>
+                    Jenkins &middot; Gitlab &middot; ArgoCd &middot; Helm &middot;
+                    Kubernetes &middot; Docker &middot; Terraform &middot; Ansible
+                    &middot; Serverless Framework &middot; K6
+                  </p>
+                </div>
+                <div class='my-1'>
+                  <h4 class='text-base font-medium'>Cloud</h4>
+                  <p class='text-sm mx-1'>
+                    AWS &middot; Azure &middot; Digital Ocean
+                  </p>
+                </div>
+                <div class='my-1'>
+                  <h4 class='text-base font-medium'>Monitoring</h4>
+                  <p class='text-sm mx-1'>
+                    Grafana &middot; Prometheus &middot; Thanos &middot;
+                    Opentelemetry &middot; Datadog
+                  </p>
+                </div>
+                <div class='my-1'>
+                  <h4 class='text-base font-medium'>Operating Systems</h4>
+                  <p class='text-sm mx-1'>
+                    Ubuntu &middot; SUSE Enterprise &middot; Centos &middot; Windows
+                    Server
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <h2 class=' text-white font-semibold underline underline-offset-8 mt-10 animate-fade-left'>
+                Certified
+              </h2>
+              <div class='my-2 pl-3'>
+                <ul>
+                  <li class='text-xs list-disc'>
+                    AWS Solutions Architect – Profesional
+                  </li>
+                  <li class='text-xs list-disc'>
+                    CKA: Certified Kubernetes Administrator
+                  </li>
+                  <li class='text-xs list-disc '>
+                    HashiCorp Certified: Terraform Associate
+                  </li>
+                  <li class='text-xs list-disc '>
+                    Microsoft Certified: Azure Fundamentals
+                  </li>
+                  <li class='text-xs list-disc '>
+                    Datadog: Datadog Fundamental
+                  </li>
+                  <li class='text-xs list-disc '>Datadog: Log Fundamental</li>
+                </ul>
+              </div>
+            </div>
+            <div>
+              <h2 class=' text-white font-semibold underline underline-offset-8 mt-10'>
+                Education
+              </h2>
+              <div class='my-2'>
+                <ul>
+                  <li>Computer Engineering</li>
+                  <li class='text-sm'>2014-2018</li>
+                  <li class='text-sm font-medium'>KMITL</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+  </body>
+</html>

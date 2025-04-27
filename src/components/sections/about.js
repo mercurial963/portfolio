@@ -1,9 +1,9 @@
-import React, { useEffect, useRef } from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
-import styled from 'styled-components';
 import { srConfig } from '@config';
-import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
+import sr from '@utils/sr';
+import { StaticImage } from 'gatsby-plugin-image';
+import React, { useEffect, useRef } from 'react';
+import styled from 'styled-components';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -39,7 +39,7 @@ const StyledText = styled.div`
         content: '▹';
         position: absolute;
         left: 0;
-        color: var(--green);
+        color: var(--pink);
         font-size: var(--fz-sm);
         line-height: 12px;
       }
@@ -61,7 +61,7 @@ const StyledPic = styled.div`
     position: relative;
     width: 100%;
     border-radius: var(--border-radius);
-    background-color: var(--green);
+    background-color: var(--white);
 
     &:hover,
     &:focus {
@@ -82,7 +82,7 @@ const StyledPic = styled.div`
       position: relative;
       border-radius: var(--border-radius);
       mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1);
+      filter: contrast(1) brightness(90%);
       transition: var(--transition);
     }
 
@@ -105,7 +105,7 @@ const StyledPic = styled.div`
     }
 
     &:after {
-      border: 2px solid var(--green);
+      border: 2px solid var(--pink);
       top: 14px;
       left: 14px;
       z-index: -1;
@@ -125,7 +125,23 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Linux',
+    'Gitlab',
+    'Kubernetes',
+    'AWS',
+    'Terraform',
+    'Docker',
+    'Jenkins',
+    'Argocd',
+    'Ansible',
+    'Helm',
+    'Prometheus',
+    'Grafana',
+    'SealSecret',
+    'ELK Stack',
+    'Windows Server',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -135,30 +151,20 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! I'm Pao, a DevOps engineer from Thailand who’s passionate about creating
+              scalable, secure systems that power amazing digital experiences. My journey started
+              with a deep curiosity about how technology works behind the scenes which grew into a
+              focus on automation, cloud-native architecture, and resilient infrastructure.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              Today, I help teams build efficient, human-centered platforms that power real-world
+              applications.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              When I’m not working on infrastructure projects, I’m exploring new tech trends and
+              enjoying life in Thailand.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
@@ -173,7 +179,7 @@ const About = () => {
           <div className="wrapper">
             <StaticImage
               className="img"
-              src="../../images/me.jpg"
+              src="../../images/pao.JPG"
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
