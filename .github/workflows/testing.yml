@@ -27,7 +27,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn init -y
-          yarn install -D @playwright/test
+          yarn install
       
       - name: Install Playwright browser
         run: yarn playwright install chromium --with-deps
