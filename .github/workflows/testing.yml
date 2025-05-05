@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: |
           yarn install
-          yarn install playwright
+          yarn playwright install --with-deps
       
       - name: Install Playwright browser
         run: yarn playwright install chromium --with-deps
