@@ -23,7 +23,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "prepare": "husky install",
-    "lint-staged": "lint-staged",
+    "lint-staged": "NODE_ENV=test lint-staged",
     "test": "playwright test"
   },
   "lint-staged": {
@@ -68,6 +68,8 @@
     "@babel/core": "^7.14.0",
     "@babel/eslint-parser": "^7.13.14",
     "@babel/preset-react": "^7.13.13",
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.3",
     "@upstatement/eslint-config": "^1.0.0",
     "@upstatement/prettier-config": "^1.0.0",
     "babel-preset-gatsby": "^1.4.0",

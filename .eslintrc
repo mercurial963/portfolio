@@ -1,4 +1,12 @@
 {
   "root": true,
-  "extends": "@upstatement/eslint-config/react"
+  "extends": "@upstatement/eslint-config/react",
+  "overrides": [
+    {
+      "files": ["tests/**/*.spec.js"],
+      "rules": {
+        "no-console": "off"
+      }
+    }
+  ]
 }
