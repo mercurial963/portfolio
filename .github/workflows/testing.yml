@@ -4,6 +4,8 @@ on:
   push:
     branches: 
       - main 
+
+  #TODO: Add triggering when cloudflare pages has been deployed
   schedule:
     - cron: '0 0 * * 1'  # Monday at midnight
   # Allow manual triggering
@@ -26,7 +28,6 @@ jobs:
       
       - name: Install dependencies
         run: |
-          yarn init -y
           yarn install
       
       - name: Install Playwright browser
