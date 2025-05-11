@@ -6,7 +6,7 @@ import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import pao from '../../public/pao.jpeg';
+import pao from '../../static/pao.jpeg';
 
 const StyledResumeContainer = styled.main`
   display: flex;
