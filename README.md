@@ -2,36 +2,30 @@
   <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
 </div>
 <h1 align="center">
-  brittanychiang.com - v4
+  <a href="https://paolersiripong.pages.dev/" target="_blank">paolersiripong.pages.dev</a>
 </h1>
+
 <p align="center">
-  The fourth iteration of <a href="https://brittanychiang.com" target="_blank">brittanychiang.com</a> built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-</p>
-<p align="center">
-  Previous iterations:
-  <a href="https://github.com/bchiang7/v1" target="_blank">v1</a>,
-  <a href="https://github.com/bchiang7/v2" target="_blank">v2</a>,
-  <a href="https://github.com/bchiang7/bchiang7.github.io" target="_blank">v3</a>
-</p>
-<p align="center">
-  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/1963b488-7b78-48c9-9e2d-6fb5e47ab3af/deploy-status" alt="Netlify Status" />
-  </a>
+  My personal portfolio website built with <a href="https://www.gatsbyjs.org/" target="_blank">Gatsby</a> and hosted with <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a>
 </p>
 
-![demo](https://raw.githubusercontent.com/bchiang7/v4/main/src/images/demo.png)
+## About This Project
 
-## 🚨 Forking this repo (please read!)
+This portfolio showcases my skills, experience, and projects in web development. The site features a clean, responsive design with smooth animations and an intuitive user interface.
 
-Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+## Features
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+- Responsive design that works on all devices
+- Project showcase with detailed descriptions
+- Skills and technology stack visualization
+- Contact form with validation
 
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+## Tech Stack
 
-### TL;DR
-
-Yes, you can fork this repo. Please give me proper credit by linking back to [brittanychiang.com](https://brittanychiang.com). Thanks!
+- [Gatsby](https://www.gatsbyjs.org/) - React-based framework
+- [Styled Components](https://styled-components.com/) - For styling
+- [React](https://reactjs.org/) - JavaScript library
+- [Cloudflare Pages](https://pages.cloudflare.com/) - Hosting platform
 
 ## 🛠 Installation & Set Up
 
@@ -50,11 +44,10 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
 3. Install dependencies
 
    ```sh
-   yarn
+   npm install
    ```
 
 4. Start the development server
-
    ```sh
    npm start
    ```
@@ -67,21 +60,57 @@ Yes, you can fork this repo. Please give me proper credit by linking back to [br
    npm run build
    ```
 
-1. Preview the site as it will appear once deployed
-
+2. Preview the site as it will appear once deployed
    ```sh
    npm run serve
    ```
+
+## 📦 Deploying to Cloudflare Pages
+
+1. Push your code to a GitHub repository
+
+2. Log in to the Cloudflare dashboard and select "Pages"
+
+3. Click "Create a project" and select "Connect to Git"
+
+4. Select your GitHub repository
+
+5. Configure your build settings:
+
+   - Build command: `npm run build`
+   - Build output directory: `public`
+   - Node.js version: Select the version you're using (e.g., 20.x)
+
+6. Click "Save and Deploy"
+
+7. Wait for the initial build to complete. Your site will be available at a URL like `your-project-name.pages.dev`
+
+8. (Optional) Configure a custom domain in the Cloudflare Pages settings
 
 ## 🎨 Color Reference
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Navy           | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
-| Light Navy     | ![#112240](https://via.placeholder.com/10/0a192f?text=+) `#112240` |
-| Lightest Navy  | ![#233554](https://via.placeholder.com/10/303C55?text=+) `#233554` |
-| Slate          | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
-| Light Slate    | ![#a8b2d1](https://via.placeholder.com/10/a8b2d1?text=+) `#a8b2d1` |
-| Lightest Slate | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
-| White          | ![#e6f1ff](https://via.placeholder.com/10/e6f1ff?text=+) `#e6f1ff` |
-| Green          | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| Primary        | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
+| Secondary      | ![#112240](https://via.placeholder.com/10/112240?text=+) `#112240` |
+| Accent         | ![#64ffda](https://via.placeholder.com/10/64ffda?text=+) `#64ffda` |
+| Text Primary   | ![#ccd6f6](https://via.placeholder.com/10/ccd6f6?text=+) `#ccd6f6` |
+| Text Secondary | ![#8892b0](https://via.placeholder.com/10/8892b0?text=+) `#8892b0` |
+| Background     | ![#0a192f](https://via.placeholder.com/10/0a192f?text=+) `#0a192f` |
+
+## Customization
+
+To customize this portfolio for your own use:
+
+1. Replace the logo and favicon with your own
+2. Update the personal information in `src/config.js`
+3. Add your own projects in the projects section
+4. Modify the color scheme to match your personal brand
+
+## Credits
+
+This project is a fork of [Brittany Chiang's portfolio v4](https://github.com/bchiang7/v4). The original design was created by [Brittany Chiang](https://brittanychiang.com/) and has been customized for my personal use with her permission through the open-source license. Thank you Brittany for the beautiful design and inspiration!
+
+## License
+
+The code is available under the MIT license. Please give appropriate credit by linking back to [brittanychiang.com](https://brittanychiang.com) if you use this design.
